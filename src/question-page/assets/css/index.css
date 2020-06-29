@@ -14,6 +14,22 @@ p{
     line-height: 1.6;
     font-size: 1rem;
 }
+.p{
+    font-size: 14px;
+    line-height: 1.6rem;
+}
+.italics{
+    font-style: italic;
+}
+.bold{
+    font-weight: bold;
+}
+.code-snippet{
+    color: #819c46;
+    background-color: antiquewhite;
+    line-height: inherit;
+    vertical-align: middle;
+}
 .container{
     width: 1051px;
     margin: auto;
@@ -61,35 +77,29 @@ p{
     font-size: 2rem;
     margin: 0;
 }
-.container .question-header .question-header-details
-.question-title{
+.container .question-header .question-header-details .question-title{
     font-style: normal;
     font-weight: 600;
     font-size: 2rem;
     margin: 0;
 }
-.container .question-header .question-header-details
-.question-data{
+.container .question-header .question-header-details .question-data{
     display: flex;
 }
-.container .question-header .question-header-details
-.question-data span{
+.container .question-header .question-header-details .question-data span{
     font-weight: bold;
 }
-.container .question-header .question-header-details
-.question-data p{
+.container .question-header .question-header-details .question-data p{
     font-size: 0.8rem;
 
 }
-.container .question-header .question-header-details
-.question-data p:first-of-type{
+.container .question-header .question-header-details .question-data p:first-of-type{
     padding-right: 20px;
 }
 .container .question-header .question-options{
     width: 37px;
     margin-left: auto;
 }
-
 .container .question-header .question-options svg{
 color: #3d3d33;
 cursor: pointer;
@@ -111,7 +121,6 @@ cursor: pointer;
     flex-direction: column;
     align-content: center;
 }
-
 .container .main-question-wrapper .voting-section .voting-system{
     margin-right: auto;
     display: flex;
@@ -119,10 +128,9 @@ cursor: pointer;
     justify-content: center;
     align-content: center;
 }
+.voting-system .vote-count p{
 
-.voting-system .vote-count{
-
-    font-size: 20px;
+    font-size: 1.5rem;
     color: #00000079;
     font-weight: 600;
     padding-top: 10px;
@@ -140,3 +148,92 @@ cursor: pointer;
     padding-right: 20px;
     padding-left: 20px;
 }
+.tags-wrapper{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.tag{
+    cursor: pointer;
+    color: #FF9900;
+    background-color: #F5E8D5;
+    border-radius: 2px;
+    padding: 5px;
+    margin-left: 10px;
+}
+.question-comments-wrapper{
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.question-comment{
+    display: flex;
+    padding: 10px 0;
+     align-content: center;
+     justify-content: center;
+}
+.question-comment .comment-actions{
+    width: 100px;
+    margin: auto;
+}
+.comment-vote-system{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.comment-vote-system .comment-upvote,
+.comment-vote-system .comment-downvote{
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+.comment-vote-system .comment-vote-system-count{
+    margin: auto;
+    padding-top: 5px;
+    color: #3d3d33;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+.question-comment .comment-section .comment-main .comment-string{
+    padding: 10px;
+    margin: auto;
+    vertical-align: middle;
+
+}
+.question-comment .comment-section .comment-main .comment-string p{
+    line-height: 1rem;
+}
+.question-comment .comment-section p,
+.question-comment .comment-section {
+    width: 100%;
+    font-size: 12px;
+}
+.question-comment .comment-section .comment-main .comment-details{
+    text-align: right;
+    color: rgba(0, 0, 0, 0.33);
+}
+.question-comment .comment-section .comment-main .comment-details .comment-date,
+.question-comment .comment-section .comment-main .comment-details .comment-user{
+   padding-bottom: 5px;
+}
+.question-comment .comment-section .comment-main .comment-details .comment-user a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #0077CC;
+}
+.question-comment .comment-section .comment-main .comment-details .comment-user a span{
+    font-weight: bold;
+
+}
+.question-comment .comment-section .comment-main .comment-details .comment-date{
+    font-style: italic;
+}
+.question-comments-wrapper .load-more-comments{
+    padding: 10px 0;
+}
+.question-comments-wrapper .load-more-comments a{
+    color: #0077cc;
+    cursor: pointer;
+}
+
