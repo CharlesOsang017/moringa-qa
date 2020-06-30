@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets\css\index.css">
+    <title>Moringa-Qa</title>
+</head>
+
+<body>
+    <div class="main">
+        <h2>All Questions</h2>
+        <p>10 Questions with no upvoted and ananswered questions</p>
+        <h3>Ask Questions </h3>
+        <p></p>
+    </div>
+    <div class="topnav">
+        <a class="Filter" href="#filter">Filter</a>
+        <a class="Newest" href="#Newest">Newest</a>
+        <a href="#Active">Active</a>
+        <a href="#Ananswered">Ananswered</a>
+
+    </div>
+
+    <div class="sidenav">
+        <a href="#Home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#users">Users</a>
+        <a href="#profile">Profile</a>
+        <button class="dropdown-btn">More
+    <i class="fa fa-caret-down"></i>
+  </button>
+        <div class="dropdown-container">
+            <a href="#">Messages</a>
+            <a href="#">Notifications</a>
+            <a href="#">Teams</a>
+        </div>
+        <a href="#Search">Search</a>
+    </div>
+
+
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

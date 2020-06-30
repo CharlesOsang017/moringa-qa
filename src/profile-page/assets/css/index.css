@@ -32,7 +32,7 @@ nav ul li a{
     text-transform: uppercase;
 }
 a.active, a:hover{
-    background: #C4C4C4;
+    background: #807b7b;
     /* transition: .5s; */
 }
 #profile {
@@ -43,16 +43,18 @@ a.active, a:hover{
 ul{
     float: left;
     /* margin-right: 20px; */
+
 }
 ul li{
     display:inline-block;
     line-height: 80px;
     margin:0 5px;
+    /* background: #C4C4C4; */
 }
 ul li a{
     color:rgb(17, 16, 16);
     font-size:17px;
-    padding:7px 13px;
+    padding:15px 20px;
     border-radius: 3px;
     text-transform: uppercase;
 }
@@ -74,7 +76,7 @@ li{
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+    max-width: 500px;
     margin: auto;
     text-align: center;
     font-family: arial;
