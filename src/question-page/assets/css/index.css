@@ -1,0 +1,303 @@
+/*Global Styling*/
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+body{
+    width: 100%;
+    background-color: #f7f5f5;
+    font-size: 14px;
+    line-height: 14px;    
+    margin: 0;
+    padding: 0;
+}
+.title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #3d3d33;
+    margin: 0;
+}
+p{
+    line-height: 1.6;
+    font-size: 1rem;
+}
+.p{
+    font-size: 14px;
+    line-height: 1.6rem;
+}
+.italics{
+    font-style: italic;
+}
+.bold{
+    font-weight: bold;
+}
+.code-snippet{
+    color: #819c46;
+    background-color: antiquewhite;
+    line-height: inherit;
+    vertical-align: middle;
+}
+.divider{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid #0000001a;
+
+}
+.button-primary{
+    height: 40px;
+    background: #58741C;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0;
+    cursor: pointer;
+    width: 100%;
+}
+.button-primary:hover{
+    background: #417408;
+    transition: 0.5s;
+}
+/*End of style global styling*/
+.question-item{
+    width: 1051px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 1px 1px 10px #58741C;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+/*Questions header*/
+.question-item .question-header{
+    padding: 0 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.question-item .question-header .user-wrapper{
+    padding: 20px 0;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    cursor: pointer;
+}
+.question-item .question-header .user-wrapper .user-image{
+    width: 53px;
+    height: 53px;
+}
+.user-name{
+    display: inline;
+}
+.user-name span{
+    font-weight: bold;
+}
+.question-item .question-header .user-wrapper .user-details p.user-upvotes{
+    font-weight: bold;
+}
+.question-item .question-header .question-header-details{
+    display: flex;
+    padding-left: 20px;
+    flex-direction: column;
+    width: 725px;
+}
+.question-item .question-header .question-header-details .question-title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 0;
+}
+.question-item .question-header .question-header-details .question-data{
+    display: flex;
+}
+.question-item .question-header .question-header-details .question-data span{
+    font-weight: bold;
+}
+.question-item .question-header .question-header-details .question-data p{
+    font-size: 0.8rem;
+
+}
+.question-item .question-header .question-header-details .question-data p:first-of-type{
+    padding-right: 20px;
+}
+.question-item .question-header .question-options{
+    width: 37px;
+    margin-left: auto;
+}
+.question-item .question-header .question-options svg{
+color: #3d3d33;
+cursor: pointer;
+}
+/*End of style questions header*/
+
+/* main question*/
+
+.question-item .main-question-wrapper{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.question-item .main-question-wrapper .voting-section{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.voting-system{
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.voting-system .vote-count p{
+    font-size: 1.5rem;
+    color: #00000079;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    text-align: center;
+}
+.voting-system .upvote-button,
+.voting-system .downvote-button{
+    margin: auto;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.question-item .main-question-wrapper .question-section{
+    width: 900px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.tags-wrapper{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.tag{
+    cursor: pointer;
+    color: #FF9900;
+    background-color: #F5E8D5;
+    border-radius: 2px;
+    padding: 5px;
+    margin-left: 10px;
+}
+/*End of style main question*/
+
+/*question comments*/
+
+.question-comments-wrapper{
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.question-comment{
+    display: flex;
+    padding: 10px 0;
+     align-content: center;
+     justify-content: center;
+}
+.question-comment .comment-actions{
+    width: 100px;
+    margin: auto;
+}
+.comment-vote-system{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.comment-vote-system .comment-upvote,
+.comment-vote-system .comment-downvote{
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+.comment-vote-system .comment-vote-system-count{
+    margin: auto;
+    padding-top: 5px;
+    color: #3d3d33;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+.question-comment .comment-section .comment-main .comment-string{
+    padding: 10px;
+    margin: auto;
+    vertical-align: middle;
+
+}
+.question-comment .comment-section .comment-main .comment-string p{
+    line-height: 1rem;
+}
+.question-comment .comment-section p,
+.question-comment .comment-section {
+    width: 100%;
+    font-size: 12px;
+}
+.question-comment .comment-section .comment-main .comment-details{
+    text-align: right;
+    color: rgba(0, 0, 0, 0.33);
+}
+.question-comment .comment-section .comment-main .comment-details .comment-date,
+.question-comment .comment-section .comment-main .comment-details .comment-user{
+   padding-bottom: 5px;
+}
+.question-comment .comment-section .comment-main .comment-details .comment-user a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #0077CC;
+}
+.question-comment .comment-section .comment-main .comment-details .comment-user a span{
+    font-weight: bold;
+
+}
+.question-comment .comment-section .comment-main .comment-details .comment-date{
+    font-style: italic;
+}
+.question-comments-wrapper .load-more-comments{
+    padding: 10px 0;
+}
+.question-comments-wrapper .load-more-comments a{
+    color: #0077cc;
+    cursor: pointer;
+}
+/*end of question comments*/
+
+/*question answer*/
+.main-answer-wrapper{
+    padding: 0 40px;
+}
+.answer-item{
+    display: flex;
+    justify-content: center;
+}
+.answer-item .answer-actions{
+    width: 100px;
+    padding: 20px 0;
+}
+.answer-item .answer-content{
+    padding: 20px;
+}
+/*end of answer styles*/
+
+/*post answer style*/
+
+.post-answer{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.post-answer .editor-wrapper{
+    padding:50px 0;
+}
+.post-answer .submit-button{
+    width: 200px;
+    float: right;
+    padding: 20px 0;
+}
+
+/*end of answer style*/
+
