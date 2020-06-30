@@ -124,3 +124,6 @@ li{
       flex-direction: row;
       /* float: right; */
   }
+  h1{
+      text-align: center;
+  }
