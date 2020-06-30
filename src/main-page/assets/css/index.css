@@ -1,107 +1,107 @@
-                                                                                                                                            body {
-                                                                                                                                                font-family: "Lato", sans-serif;
-                                                                                                                                            }
-                                                                                                                                            /* Fixed sidenav, full height */
-                                                                                                                                            
-                                                                                                                                            .sidenav {
-                                                                                                                                                height: 100%;
-                                                                                                                                                width: 200px;
-                                                                                                                                                position: fixed;
-                                                                                                                                                z-index: 1;
-                                                                                                                                                top: 0;
-                                                                                                                                                left: 0;
-                                                                                                                                                background-color: black;
-                                                                                                                                                ;
-                                                                                                                                                overflow-x: hidden;
-                                                                                                                                                padding-top: 50px;
-                                                                                                                                            }
-                                                                                                                                            /* Style the sidenav links and the dropdown button */
-                                                                                                                                            
-                                                                                                                                            .sidenav a,
-                                                                                                                                            .dropdown-btn {
-                                                                                                                                                padding: 6px 8px 6px 16px;
-                                                                                                                                                text-decoration: none;
-                                                                                                                                                font-size: 20px;
-                                                                                                                                                color: f5f5f5;
-                                                                                                                                                display: block;
-                                                                                                                                                border: none;
-                                                                                                                                                background: none;
-                                                                                                                                                width: 100%;
-                                                                                                                                                text-align: left;
-                                                                                                                                                cursor: pointer;
-                                                                                                                                                outline: none;
-                                                                                                                                            }
-                                                                                                                                            /* On mouse-over */
-                                                                                                                                            
-                                                                                                                                            .sidenav a:hover,
-                                                                                                                                            .dropdown-btn:hover {
-                                                                                                                                                color: white;
-                                                                                                                                            }
-                                                                                                                                            /* Main content */
-                                                                                                                                            
-                                                                                                                                            .main {
-                                                                                                                                                margin-left: 200px;
-                                                                                                                                                /* Same as the width of the sidenav */
-                                                                                                                                                font-size: 20px;
-                                                                                                                                                /* Increased text to enable scrolling */
-                                                                                                                                                padding: 0px 10px;
-                                                                                                                                            }
-                                                                                                                                            /* Add an active class to the active dropdown button */
-                                                                                                                                            
-                                                                                                                                            .active {
-                                                                                                                                                background-color: black;
-                                                                                                                                                color: white;
-                                                                                                                                            }
-                                                                                                                                            /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-                                                                                                                                            
-                                                                                                                                            .dropdown-container {
-                                                                                                                                                display: none;
-                                                                                                                                                background-color: white;
-                                                                                                                                                padding-left: 8px;
-                                                                                                                                            }
-                                                                                                                                            /* Optional: Style the caret down icon */
-                                                                                                                                            
-                                                                                                                                            .fa-caret-down {
-                                                                                                                                                float: left;
-                                                                                                                                                padding-right: 8px;
-                                                                                                                                            }
-                                                                                                                                            
-                                                                                                                                            .sidenav {
-                                                                                                                                                padding-top: -15px;
-                                                                                                                                            }
-                                                                                                                                            
-                                                                                                                                            .sidenav a {
-                                                                                                                                                font-size: 18px;
-                                                                                                                                            }
-                                                                                                                                            
-                                                                                                                                            .topnav {
-                                                                                                                                                background-color: white;
-                                                                                                                                                overflow: hidden;
-                                                                                                                                            }
-                                                                                                                                            
-                                                                                                                                            .topnav a {
-                                                                                                                                                float: right;
-                                                                                                                                                color: A6A0A0;
-                                                                                                                                                text-align: center;
-                                                                                                                                                padding: 14px 16px;
-                                                                                                                                                text-decoration: none;
-                                                                                                                                                font-size: 17px;
-                                                                                                                                            }
-                                                                                                                                            
-                                                                                                                                            .topnav a:hover {
-                                                                                                                                                background-color: white;
-                                                                                                                                                color: white;
-                                                                                                                                            }
-                                                                                                                                            
-                                                                                                                                            .topnav a.active {
-                                                                                                                                                background-color: A6A0A0;
-                                                                                                                                                color: A6A0A0;
-                                                                                                                                            }
-                                                                                                                                            
-                                                                                                                                            h3 {
-                                                                                                                                                float: right;
-                                                                                                                                            }
-                                                                                                                                            
-                                                                                                                                            p {
-                                                                                                                                                font-size: small;
-                                                                                                                                            }
+                body {
+                    font-family: "Lato", sans-serif;
+                }
+                /* Fixed sidenav, full height */
+                
+                .sidenav {
+                    height: 100%;
+                    width: 200px;
+                    position: fixed;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    background-color: #648A0E;
+                    overflow-x: hidden;
+                    padding-top: 50px;
+                }
+                /* Style the sidenav links and the dropdown button */
+                
+                .sidenav a,
+                .dropdown-btn {
+                    padding: 6px 8px 6px 16px;
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: black;
+                    display: block;
+                    border: none;
+                    background: none;
+                    width: 100%;
+                    text-align: left;
+                    cursor: pointer;
+                    outline: none;
+                }
+                /* On mouse-over */
+                
+                .sidenav a:hover,
+                .dropdown-btn:hover {
+                    color: white;
+                }
+                /* Main content */
+                
+                .main {
+                    margin-left: 200px;
+                    /* Same as the width of the sidenav */
+                    font-size: 20px;
+                    /* Increased text to enable scrolling */
+                    padding: 60px 10px;
+                }
+                /* Add an active class to the active dropdown button */
+                
+                .active {
+                    background-color: black;
+                    color: white;
+                }
+                /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+                
+                .dropdown-container {
+                    display: none;
+                    background-color: #8EB437;
+                    padding-left: 8px;
+                }
+                /* Optional: Style the caret down icon */
+                
+                .fa-caret-down {
+                    float: left;
+                    padding-right: 8px;
+                }
+                
+                .sidenav {
+                    padding-top: 15px;
+                }
+                
+                .sidenav a {
+                    font-size: 18px;
+                }
+                
+                .topnav {
+                    background-color: #8EB437;
+                    overflow: hidden;
+                }
+                
+                .topnav a {
+                    float: right;
+                    color: black;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    font-size: 17px;
+                }
+                
+                .topnav a:hover {
+                    background-color: white;
+                    color: #648A0E;
+                }
+                
+                .topnav a.active {
+                    background-color: #8EB437;
+                    color: #648A0E;
+                }
+                
+                h3 {
+                    padding-bottom: 25px;
+                    float: right;
+                }
+                
+                p {
+                    font-size: small;
+                }
