@@ -93,13 +93,13 @@
                 }
                 
                 .topnav a.active {
-                    background-color: #8EB437;
+                    background-color: light grey;
                     color: #648A0E;
                 }
                 
                 h3 {
                     padding-bottom: 25px;
-                    float: right;
+                    float: left;
                 }
                 
                 p {
