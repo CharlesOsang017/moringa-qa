@@ -1,0 +1,41 @@
+*{
+    background-color: #F5F5F5;
+}
+
+nav{
+    /* background: rgb(14, 23, 26); */
+    height:80px;
+    width:100%;
+}
+
+label.logo{
+color:white;
+font-size:53px;
+line-height:80px;
+padding:0 100px;
+font-weight: bold;
+}
+nav ul{
+    float: left;
+    /* margin-right: 20px; */
+}
+nav ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin:0 5px;
+}
+nav ul li a{
+    color:rgb(17, 16, 16);
+    font-size:17px;
+    padding:7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active, a:hover{
+    background: #C4C4C4;
+    transition: .5s;
+}
+#profile img{
+    float: left;
+    border:1px solid green;
+}
