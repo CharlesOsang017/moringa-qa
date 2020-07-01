@@ -64,24 +64,35 @@
                 },
             ]
             return(
-                <div className={'wrapper'}>
-                    <div className="login-header">
-                        <img className="logo" src="../../assets/logo.png" alt=""/>
-                        <div class="title">Sign in to continue</div>
+                <div className={'container'}>
+                    <div className="wrapper">
+                        <div className="login-header">
+                            <img className="logo" src="../../assets/logo.png" alt=""/>
+                            <div className="title">Sign in to continue</div>
+                        </div>
+                        <div className="input-wrapper">
+                            <div className="input-item-wrapper">
+                                <input type="text" className="input-item" placeholder="Username/Email"/>
+                            </div>
+                            <div className="input-item-wrapper">
+                                <input type="password" className="input-item" placeholder="Password"/>
+                            </div>
+                            <div className="input-item-wrapper">
+                                <button type="submit" className="input-button">Login</button>
+                            </div>
+                            <div className="forgot-password">
+                                <a href="#" className="link">forgot password?</a>
+                            </div>
+                        </div>
                     </div>
-                    <div className="input-wrapper">
-                        <input type="text" className="input-item" placeholder="Username/Email"/>
-                        <input type="password" className="input-item" placeholder="Password"/>
-                        <button type="submit" className="input-button">Login</button>
+                    <div className="divider-wrapper">
+                        <div className="horizontal-divider"/>
+                        <div className="divider-text-wrapper">
+                            <div className="divider-text">OR</div>
+                        </div>
+
                     </div>
-                    <div className="forgot-password">
-                        <a href="#" className="link">forgot password?</a>
-                    </div>
-                    <div class="divider-wrapper">
-                        <div class="horizontal-divider"/>
-                        <div class="divider-text"/>
-                    </div>
-                    <div class="social-button-wrapper">
+                    <div className="social-button-wrapper">
                         {socialLoginButtons.map((element,index)=>
                         <ButtonComponent onClick={()=>console.log(element.text)} text={element.text} key={element.text} icon={element.icon} backgroundColor={element.backgroundColor}/>
                         )}
