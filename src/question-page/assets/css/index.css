@@ -248,7 +248,7 @@ cursor: pointer;
 .date{
    padding-bottom: 5px;
 }
-.question-comment .comment-section .comment-main .comment-details .comment-user a,
+.question-comment .comment-section .comment-main .comment-details .comment-user a
 {
     text-decoration: none;
     font-weight: 600;
