@@ -1,0 +1,129 @@
+*{
+    background-color: #F5F5F5;
+}
+body{
+    width: 100%;
+    background-color: #f7f5f5;
+    font-size: 14px;
+    line-height: 14px;    
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    /* background: rgb(14, 23, 26); */
+    height:80px;
+    width:100%;
+}
+
+label.logo{
+color:white;
+font-size:53px;
+line-height:80px;
+padding:0 100px;
+font-weight: bold;
+}
+nav ul{
+    float: none;
+    /* margin-right: 20px; */
+}
+nav ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin:0 5px;
+}
+nav ul li a{
+    color:rgb(17, 16, 16);
+    font-size:17px;
+    padding:7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active, a:hover{
+    background: #807b7b;
+    /* transition: .5s; */
+}
+#profile {
+    height: 600px;
+    width: 100%;
+    float: left;
+    /* border:1px solid green; */
+}
+ul{
+    float: left;
+    /* margin-right: 20px; */
+
+}
+ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin:0 5px;
+    /* background: #C4C4C4; */
+}
+ul li a{
+    color:rgb(17, 16, 16);
+    font-size:17px;
+    padding:15px 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a:hover{
+    background: #C4C4C4;
+    transition: .5s;
+}
+#activity{
+    height:500px;
+}
+button{
+    background-color:  #C4C4C4 ;
+}
+li{
+    list-style: none;
+}
+
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+  #profile{
+      align-items: flex-end;
+      display: flex;
+      flex-direction: row;
+      /* float: right; */
+  }
+  h1{
+      text-align: center;
+  }
