@@ -1,107 +1,134 @@
-                body {
-                    font-family: "Lato", sans-serif;
-                }
-                /* Fixed sidenav, full height */
-                
-                .sidenav {
-                    height: 100%;
-                    width: 200px;
-                    position: fixed;
-                    z-index: 1;
-                    top: 0;
-                    left: 0;
-                    background-color: #648A0E;
-                    overflow-x: hidden;
-                    padding-top: 50px;
-                }
-                /* Style the sidenav links and the dropdown button */
-                
-                .sidenav a,
-                .dropdown-btn {
-                    padding: 6px 8px 6px 16px;
-                    text-decoration: none;
-                    font-size: 20px;
-                    color: black;
-                    display: block;
-                    border: none;
-                    background: none;
-                    width: 100%;
-                    text-align: left;
-                    cursor: pointer;
-                    outline: none;
-                }
-                /* On mouse-over */
-                
-                .sidenav a:hover,
-                .dropdown-btn:hover {
-                    color: white;
-                }
-                /* Main content */
-                
-                .main {
-                    margin-left: 200px;
-                    /* Same as the width of the sidenav */
-                    font-size: 20px;
-                    /* Increased text to enable scrolling */
-                    padding: 60px 10px;
-                }
-                /* Add an active class to the active dropdown button */
-                
-                .active {
-                    background-color: black;
-                    color: white;
-                }
-                /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-                
-                .dropdown-container {
-                    display: none;
-                    background-color: #8EB437;
-                    padding-left: 8px;
-                }
-                /* Optional: Style the caret down icon */
-                
-                .fa-caret-down {
-                    float: left;
-                    padding-right: 8px;
-                }
-                
-                .sidenav {
-                    padding-top: 15px;
-                }
-                
-                .sidenav a {
-                    font-size: 18px;
-                }
-                
-                .topnav {
-                    background-color: #8EB437;
-                    overflow: hidden;
-                }
-                
-                .topnav a {
-                    float: right;
-                    color: black;
-                    text-align: center;
-                    padding: 14px 16px;
-                    text-decoration: none;
-                    font-size: 17px;
-                }
-                
-                .topnav a:hover {
-                    background-color: white;
-                    color: #648A0E;
-                }
-                
-                .topnav a.active {
-                    background-color: light grey;
-                    color: #648A0E;
-                }
-                
-                h3 {
+                                        body {
+                                            font-family: "Lato", sans-serif;
+                                            width: 100%;
+                                            margin: 0;
+                                            padding: 0;
+                                            overflow-x: hidden;
+                                            background-color: #f7f5f5;
+                                        }
+                                        
+                                        .container {
+                                            width: 100%;
+                                            display: flex;
+                                        }
+                                        
+                                        .wrapper {
+                                            width: 80vw;
+                                            padding: 20px;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            background-color: white;
+                                            border-top-left-radius: 20px;
+                                            border-top-right-radius: 20px;
+                                        }
+                                        /* Fixed sidenav, full height */
+                                        
+                                        .sidenav {
+                                            height: 100%;
+                                            width: 200px;
+                                            position: fixed;
+                                            z-index: 1;
+                                            top: 0;
+                                            left: 0;
+                                            background-color: #648A0E;
+                                            overflow-x: hidden;
+                                            padding-top: 50px;
+                                        }
+                                        /* Style the sidenav links and the dropdown button */
+                                        
+                                        .sidenav a,
+                                        .dropdown-btn {
+                                            padding: 6px 8px 6px 16px;
+                                            text-decoration: none;
+                                            font-size: 20px;
+                                            color: black;
+                                            display: block;
+                                            border: none;
+                                            background: none;
+                                            width: 100%;
+                                            text-align: left;
+                                            cursor: pointer;
+                                            outline: none;
+                                        }
+                                        /* On mouse-over */
+                                        
+                                        .sidenav a:hover,
+                                        .dropdown-btn:hover {
+                                            color: white;
+                                        }
+                                        /* Main content */
+                                        
+                                        .main {
+                                            /* width: 100%; */
+                                            /* margin-left: 200px; */
+                                            /* Same as the width of the sidenav */
+                                            font-size: 20px;
+                                            /* Increased text to enable scrolling */
+                                            padding: 60px 10px 0 10px;
+                                        }
+                                        
+                                        .main h3:first-of-type {
+                                            /* float: right; */
+                                            margin-right: auto;
+                                            text-align: right;
+                                        }
+                                        /* Add an active class to the active dropdown button */
+                                        
+                                        .active {
+                                            background-color: black;
+                                            color: white;
+                                        }
+                                        /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+                                        
+                                        .dropdown-container {
+                                            display: none;
+                                            background-color: #8EB437;
+                                            padding-left: 8px;
+                                        }
+                                        /* Optional: Style the caret down icon */
+                                        
+                                        .fa-caret-down {
+                                            float: left;
+                                            padding-right: 8px;
+                                        }
+                                        
+                                        .sidenav {
+                                            padding-top: 15px;
+                                        }
+                                        
+                                        .sidenav a {
+                                            font-size: 18px;
+                                        }
+                                        
+                                        .topnav {
+                                            width: 100%;
+                                            background-color: #8EB437;
+                                            overflow: hidden;
+                                        }
+                                        
+                                        .topnav a {
+                                            float: right;
+                                            color: black;
+                                            text-align: center;
+                                            padding: 14px 16px;
+                                            text-decoration: none;
+                                            font-size: 17px;
+                                        }
+                                        
+                                        .topnav a:hover {
+                                            background-color: white;
+                                            color: #648A0E;
+                                        }
+                                        
+                                        .topnav a.active {
+                                            background-color: light grey;
+                                            color: #648A0E;
+                                        }
+                                        /* h3 {
                     padding-bottom: 25px;
                     float: left;
-                }
-                
-                p {
-                    font-size: small;
-                }
+                } */
+                                        
+                                        p {
+                                            font-size: small;
+                                        }
