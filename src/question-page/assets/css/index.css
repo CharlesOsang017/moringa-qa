@@ -7,7 +7,7 @@ body{
     width: 100%;
     background-color: #f7f5f5;
     font-size: 14px;
-    line-height: 14px;    
+    line-height: 14px;
     margin: 0;
     padding: 0;
 }
@@ -81,7 +81,7 @@ p{
     width: 150px;
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center;
     align-items: center;
     cursor: pointer;
 }
@@ -89,8 +89,10 @@ p{
     width: 53px;
     height: 53px;
 }
-.user-name{
-    display: inline;
+.user-name {
+    text-decoration: none;
+    font-weight: 600;
+    color: #0077CC;
 }
 .user-name span{
     font-weight: bold;
@@ -237,24 +239,27 @@ cursor: pointer;
     width: 100%;
     font-size: 12px;
 }
-.question-comment .comment-section .comment-main .comment-details{
+.question-comment .comment-section .comment-main .comment-details, .date{
     text-align: right;
     color: rgba(0, 0, 0, 0.33);
 }
 .question-comment .comment-section .comment-main .comment-details .comment-date,
-.question-comment .comment-section .comment-main .comment-details .comment-user{
+.question-comment .comment-section .comment-main .comment-details .comment-user,
+.date{
    padding-bottom: 5px;
 }
-.question-comment .comment-section .comment-main .comment-details .comment-user a{
+.question-comment .comment-section .comment-main .comment-details .comment-user a,
+{
     text-decoration: none;
     font-weight: 600;
     color: #0077CC;
 }
-.question-comment .comment-section .comment-main .comment-details .comment-user a span{
+.question-comment .comment-section .comment-main .comment-details .comment-user a span,
+span{
     font-weight: bold;
 
 }
-.question-comment .comment-section .comment-main .comment-details .comment-date{
+.question-comment .comment-section .comment-main .comment-details .comment-date, .date{
     font-style: italic;
 }
 .question-comments-wrapper .load-more-comments{
@@ -280,6 +285,26 @@ cursor: pointer;
 }
 .answer-item .answer-content{
     padding: 20px;
+}
+.answer-more-details{
+    text-align: right;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.answer-user-name{
+    padding: 5px;
+}
+.answer-item .answer-options-button{
+    width:48px;
+    height: 48px;
+    cursor: pointer;
+    float: right;
+}
+.answer-item .answer-user-details .answer-options-button svg path:hover{
+    color: #819c46;
+
 }
 /*end of answer styles*/
 
