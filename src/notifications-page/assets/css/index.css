@@ -391,3 +391,49 @@ top: 50px;
         background: #C4C4C4;
         border-radius: 34px;    
 }
+
+.delete-icon{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 1110px;
+    top: 100px;
+    color: red;
+    
+}
+.delete-icon1{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 1110px;
+    top: 200px;
+    color: red;
+    
+}
+.delete-icon2{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 1110px;
+    top: 300px;
+    color: red;
+    
+}
+.delete-icon3{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 1110px;
+    top: 400px;
+    color: red;
+    
+}
+.delete-icon4{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 1110px;
+    top: 500px;
+    color: red;
+    
+}
