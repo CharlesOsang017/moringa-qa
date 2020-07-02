@@ -1,0 +1,84 @@
+.snapchat{
+    color: yellow;
+     font-size: 60px;
+}
+.windows{
+    color: blue;
+    font-size: 60px;
+
+}
+.ubuntu{
+    color: red;
+    font-size: 60px;
+
+}
+.podcast{
+    color: orangered;
+    font-size: 60px;
+
+}
+.twitter{
+    color: blue;
+    font-size: 60px;
+
+}
+.facebook{
+    color: midnightblue;
+    font-size: 60px;
+
+}
+.telegram{
+    color: blue;
+    font-size: 60px;
+
+}
+.instagram{
+    color: tomato;
+    font-size: 60px;
+
+}
+.twitter:hover{
+    color: aqua;
+}
+.facebook:hover{
+    color: pink;
+}
+.telegram:hover{
+    color: mediumvioletred;
+}
+.instagram:hover{
+    color: red;
+}
+.header{
+    font-size: 60px;
+}
+.router{
+    color: mediumblue;
+}
+.main{
+    font-size: 30px;
+}
+.media,.aura{
+    font-size: 20px;
+}
+.header{ 
+    display: flex;
+    justify-content: center;
+}
+#nap,#critic,#social,.icons1,.icons2,.media,.router{
+    display: flex;
+    justify-content: center;
+}
+.icons2,.icons1{
+    justify-content: space-around;
+}
+.pic1,.pic2,.pic3,.pic4{
+    font-size: 20px;
+}
+html{
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190628/ourmid/pngtree-green-background-material-picture-image_263996.jpg);
+/* }
+.router{
+    display: flex;
+    flex-flow: column-reverse;
+} */
