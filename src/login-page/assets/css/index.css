@@ -131,11 +131,36 @@ body{
 .social-button-wrapper{
     display: flex;
     margin: auto;
-    width:550px;
+    width:300px;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
 }
+.social-button-wrapper .social-button-item-wrapper{
+    /*width: 50px;*/
+    /*flex: 0 50%;*/
+    width: 100%;
+    margin: auto;
+    padding-bottom: 20px;
+
+}
 .social-button-wrapper .social-button{
-    flex: 0 50%;
-    
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    margin: auto;
+    vertical-align: middle;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.social-button-wrapper  .social-button:hover{
+    opacity: 0.9;
+    transition: 0.5s;
+}
+.social-button-wrapper .social-button span:first-of-type{
+    padding-right: 5px;
 }
