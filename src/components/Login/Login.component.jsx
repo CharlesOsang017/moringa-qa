@@ -103,8 +103,8 @@ const validatePassword = ()=>{
 
 }
 return(
-    <div className="container">
-        <div className="wrapper">
+    <div className="login-container">
+        <div className="login-wrapper">
             <div className="login-header">
                 <img className="logo" src="/images/logo.png" alt=""/>
                 <div className="title">Sign in to continue</div>

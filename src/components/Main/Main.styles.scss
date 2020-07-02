@@ -1,124 +1,114 @@
-/* Fixed sidenav, full height */
-/* Style the sidenav links and the dropdown button */
-/* On mouse-over */
-/* Main content */
-/* Add an active class to the active dropdown button */
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-/* Optional: Style the caret down icon */
-/* h3 {
-padding-bottom: 25px;
-float: left;
-} */
-body {
-	font-family: "Lato", sans-serif;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	overflow-x: hidden;
-	background-color: #f7f5f5;
-}
 .container {
-	width: 100%;
-	display: flex;
+    width: 100%;
+    display: flex;
 }
+
 .wrapper {
-	width: 80vw;
-	padding: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: white;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
+    width: 80vw;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
+
 .sidenav {
-	height: 100%;
-	width: 200px;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	background-color: #648A0E;
-	overflow-x: hidden;
-	padding-top: 50px;
-	padding-top: 15px;
-	a {
-		padding: 6px 8px 6px 16px;
-		text-decoration: none;
-		font-size: 20px;
-		color: black;
-		display: block;
-		border: none;
-		background: none;
-		width: 100%;
-		text-align: left;
-		cursor: pointer;
-		outline: none;
-		font-size: 18px;
-		&:hover {
-			color: white;
-		}
-	}
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #648A0E;
+    overflow-x: hidden;
+    padding-top: 50px;
+    padding-top: 15px;
+    a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        display: block;
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+        font-size: 18px;
+        &:hover {
+            color: white;
+        }
+    }
 }
+
 .dropdown-btn {
-	padding: 6px 8px 6px 16px;
-	text-decoration: none;
-	font-size: 20px;
-	color: black;
-	display: block;
-	border: none;
-	background: none;
-	width: 100%;
-	text-align: left;
-	cursor: pointer;
-	outline: none;
-	&:hover {
-		color: white;
-	}
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    &:hover {
+        color: white;
+    }
 }
+
 .main {
-	font-size: 20px;
-	padding: 60px 10px 0 10px;
-	h3 {
-		&:first-of-type {
-			margin-right: auto;
-			text-align: right;
-		}
-	}
+    font-size: 20px;
+    padding: 60px 10px 0 10px;
+    h3 {
+        &:first-of-type {
+            margin-right: auto;
+            text-align: right;
+        }
+    }
 }
+
 .active {
-	background-color: black;
-	color: white;
+    background-color: black;
+    color: white;
 }
+
 .dropdown-container {
-	display: none;
-	background-color: #8EB437;
-	padding-left: 8px;
+    display: none;
+    background-color: #8EB437;
+    padding-left: 8px;
 }
+
 .fa-caret-down {
-	float: left;
-	padding-right: 8px;
+    float: left;
+    padding-right: 8px;
 }
+
 .topnav {
-	width: 100%;
-	background-color: #8EB437;
-	overflow: hidden;
-	a {
-		float: right;
-		color: black;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-		font-size: 17px;
-		&:hover {
-			background-color: white;
-			color: #648A0E;
-		}
-	}
-	a.active {
-		background-color: light grey;
-		color: #648A0E;
-	}
+    width: 100%;
+    background-color: #8EB437;
+    overflow: hidden;
+    a {
+        float: right;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        &:hover {
+            background-color: white;
+            color: #648A0E;
+        }
+    }
+    a.active {
+        background-color: light grey;
+        color: #648A0E;
+    }
 }
+
 p {
-	font-size: small;
+    font-size: small;
 }
