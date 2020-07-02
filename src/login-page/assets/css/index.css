@@ -43,7 +43,7 @@ body{
     height: 40px;
     width: 300px;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 .input-wrapper .input-item-wrapper .input-item{
     text-align: center;
@@ -69,6 +69,9 @@ body{
     transition: 0.5s;
     background-color: whitesmoke;
     transition-timing-function: linear;
+}
+.input-wrapper .input-item-wrapper .input-danger:focus{
+    box-shadow: 1px 1px 10px #741F1F;
 }
 .input-wrapper .input-item-wrapper .input-button{
     cursor: pointer;
@@ -128,6 +131,7 @@ body{
     border-radius: 50%;
     background: white;
 }
+
 .social-button-wrapper{
     display: flex;
     margin: auto;
@@ -136,31 +140,48 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
-.social-button-wrapper .social-button-item-wrapper{
-    /*width: 50px;*/
-    /*flex: 0 50%;*/
-    width: 100%;
-    margin: auto;
-    padding-bottom: 20px;
-
-}
-.social-button-wrapper .social-button{
-    text-align: left;
-    border: none;
+.social-button{
+    display: flex;
+    align-items: center;
+    width: 240px;
+    height: 42px;
+    margin: auto auto 20px;
+    background-color: #4285f4;
+    border-radius: 2px;
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
     cursor: pointer;
-    width: 100%;
-    height: 60px;
-    border-radius: 5px;
+}
+.social-button span{
+    /*position: absolute;*/
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    /*background-color: #fff;*/
+}
+.social-button span>svg{
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 11px;
+    width: 18px;
+    height: 18px;
+}
+.social-button p{
+    /*float: right;*/
+    text-align: left;
+    /*margin: 11px 11px 0 0;*/
+    line-height: 42%;
+    margin: auto 0;
+    /*color: #fff;*/
     font-size: 16px;
-    font-weight: 400;
-    margin: auto;
-    vertical-align: middle;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 500;
+    letter-spacing: 0.2px;
 }
 .social-button-wrapper  .social-button:hover{
     opacity: 0.9;
     transition: 0.5s;
 }
-.social-button-wrapper .social-button span:first-of-type{
-    padding-right: 5px;
-}
+/*.social-button-wrapper .social-button span:first-of-type{*/
+/*    padding-right: 5px;*/
+/*}*/
