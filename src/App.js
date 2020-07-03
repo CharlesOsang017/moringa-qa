@@ -26,13 +26,13 @@ const App = () => {
         <div>
             <Header currentUser={currentUser} />
             <Switch>
-                <Route exact path='/' component={Main} />
-                <Route exact path='/question' component={Questions} />
+                <Route exact path='/moring-qa' component={Main} />
+                <Route exact path='/moring-qa/question' component={Questions} />
                 <Route exact render={() => (
-                    !currentUser ? (<Redirect push path="/login" />)
+                    !currentUser ? (<Redirect push path="/moring-qa/login" />)
                         : (<Route component={PostQuestion} />)
-                )}  path='/postQuestion'/>
-                <Route exact path="/login" render={() => (
+                )}  path='/moring-qa/postQuestion'/>
+                <Route exact path="/moring-qa/login" render={() => (
                     currentUser ? (<Redirect push path="/" />)
                         : (<Route component={Login} />)
                 )} />
