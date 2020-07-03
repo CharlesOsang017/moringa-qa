@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "568c68450101a0e4d8a90c900fb32479",
+    "revision": "82f524bf4dd1728485688de3ba56c935",
     "url": "/moringa-qa/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/moringa-qa/static/css/2.3c515868.chunk.css"
   },
   {
-    "revision": "4abd30bc50f47f295b23",
+    "revision": "3bca5287f45b2ce52a1a",
     "url": "/moringa-qa/static/css/main.83923214.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/moringa-qa/static/js/2.af56103b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4abd30bc50f47f295b23",
-    "url": "/moringa-qa/static/js/main.f3f959fb.chunk.js"
+    "revision": "3bca5287f45b2ce52a1a",
+    "url": "/moringa-qa/static/js/main.d18d67dc.chunk.js"
   },
   {
     "revision": "9b13c866d36b32817458",
