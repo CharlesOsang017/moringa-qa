@@ -17,14 +17,14 @@ const Header = ({currentUser}) => {
         <header className={`${currentUser && 'has-user '}`}>
             <a href="#" className="logo">Moringa-QA</a>
             <ul>
-                <li><Link to='/'>Home</Link></li>
-                <li><Link to="/question">Questions</Link></li>
-                {currentUser && <li><Link to="/postQuestion">Post A Question</Link></li>}
+                <li><Link to='/moring-qa'>Home</Link></li>
+                <li><Link to="/moring-qa/question">Questions</Link></li>
+                {currentUser && <li><Link to="/moring-qa/postQuestion">Post A Question</Link></li>}
                 {
                 currentUser?
                 <li ><a onClick={()=>auth.signOut()}> Sign Out</a></li>
                 :
-                <li><Link to="/login"> Sign In</Link></li>
+                <li><Link to="/moring-qa/login"> Sign In</Link></li>
 
                 }
                 {
