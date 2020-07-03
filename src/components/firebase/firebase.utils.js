@@ -10,11 +10,19 @@ const config = {
     messagingSenderId: "572067118483",
     appId: "1:572067118483:web:9722c36fdf776c28087c66"
 };
+export const createUserProfileDocument = async (userAuth,addidtionalDate)=>{
+    if(!userAuth)return;
+}
 !firebase.apps.length? firebase.initializeApp(config).firestore(): firebase.app().firestore();
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 const provider = new firebase.auth.GoogleAuthProvider();
 provider.setCustomParameters({prompt:'select_account'});
 export const signInWithGoogle = ()=>auth.signInWithPopup(provider)
+export const signInWithEmailAndPassword=(email,password) =>auth.signInWithEmailAndPassword(email, password).catch(function(error) {
+    // Handle Errors here.
+    return error;
+    // ...
+  });
 
 export default firebase

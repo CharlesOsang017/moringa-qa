@@ -4,6 +4,8 @@ import './Main.styles.scss';
 const Main = () => {
     return (
         <div className="container">
+            {/* <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossOrigin="anonymous" /> */}
+
             <div className="wrapper ">
                 <div className="main ">
                     <h2>All Questions</h2>
@@ -19,16 +21,165 @@ const Main = () => {
                                 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width={1} height={1}>
                                     <use xlinkHref="#image0" transform="translate(0 -0.0393519) scale(0.00462963)" />
                                 </pattern>
-                                <image id="image0" width={216} height={233} xlinkHref="data:image/png;base64,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" />
+                                <image id="image0" width={150} height={200} xlinkHref="data:image/png;base64,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" />
                             </defs>
-                        </svg>
-                        <span>Filter</span></a>
+                        </svg>Filter</a>
                     <a className="Newest " href="#Newest ">Newest</a>
                     <a href="#Active ">Active</a>
                     <a href="#Ananswered ">Ananswered</a>
                 </div>
+                <div className="question-summary pt-3 pb-3" id="question-summary-44686609">
+                    <div className="statscontainer pl-4">
+                        <div className="stats">
+                            <div className="vote">
+                                <div className="votes">
+                                    <span className="vote-count-post "><strong>282</strong></span>
+                                    <div className="viewcount">votes</div>
+                                </div>
+                            </div>
+                            <div className="status unanswered ">
+                                <strong>0</strong>
+                                <div className="viewcount ">answers</div>
+                            </div>
+                        </div>
+                        <div className="views warm " title="9,012 views">
+                            <strong> 9k</strong>
+                            <div className="viewcount">views</div>
+                        </div>
+                    </div>
+                    <div className="summary">
+                        <h3><a href="/questions/44686609/implementing-a-neural-network-in-haskell" className="question-hyperlink">Implementing a Neural Network in Haskell</a></h3>
+                        <div className="excerpt">
+                            I'm trying to implement a neural network architecture in Haskell, and use it on MNIST.
+                            I'm using the hmatrix package for the linear algebra.
+                            My training framework is built using the pipes package.
+                            ...
+        </div>
+                        <div className="tags t-algorithm t-haskell t-neural-network t-backpropagation pl-4">
+                            <a href="/questions/tagged/algorithm" className="post-tag" title="show questions tagged 'algorithm'" rel="tag">algorithm</a> <a href="/questions/tagged/haskell" className="post-tag" title="show questions tagged 'haskell'" rel="tag">haskell</a> <a href="/questions/tagged/neural-network" className="post-tag" title="show questions tagged 'neural-network'" rel="tag">neural-network</a> <a href="/questions/tagged/backpropagation" className="post-tag" title="show questions tagged 'backpropagation'" rel="tag">backpropagation</a>
+                        </div>
+                        <div className="started fr">
+                            <div className="user-info ">
+                                <div className="user-action-time">
+                                    asked <span title="2017-06-21 21:32:02Z" className="relativetime">Jun 21 '17 at 21:32</span>
+                                </div>
+                                <div className="user-gravatar32">
+                                    <a href="/users/4196726/charles-langlois"><div className="gravatar-wrapper-32"><img src="https://lh3.googleusercontent.com/-wQ86ZJ6sCsA/AAAAAAAAAAI/AAAAAAAAAI8/2dENRfi7v5c/photo.jpg?sz=32" alt width={32} height={32} className="bar-sm" /></div></a>
+                                </div>
+                                <div className="user-details">
+                                    <a href="/users/4196726/charles-langlois">Charles Langlois</a>
+                                    <div className="-flair">
+                                        <span className="reputation-score" title="reputation score " dir="ltr">3,382</span><span title="1 gold badge" aria-hidden="true"><span className="badge1" /><span className="badgecount">1</span></span><span className="v-visible-sr">1 gold badge</span><span title="10 silver badges" aria-hidden="true"><span className="badge2" /><span className="badgecount">10</span></span><span className="v-visible-sr">10 silver badges</span><span title="19 bronze badges" aria-hidden="true"><span className="badge3" /><span className="badgecount">19</span></span><span className="v-visible-sr">19 bronze badges</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="question-summary" id="question-summary-44686609">
+                    <div className="statscontainer">
+                        <div className="stats">
+                            <div className="vote">
+                                <div className="votes">
+                                    <span className="vote-count-post "><strong>282</strong></span>
+                                    <div className="viewcount">votes</div>
+                                </div>
+                            </div>
+                            <div className="status unanswered">
+                                <strong>0</strong>
+                                <div className="viewcount">Answers</div>
+                            </div>
+                        </div>
+                        <div className="views warm" title="9,012 views">
+                            <strong>150</strong>
+                            <div className="viewcount">views</div>
+                        </div>
+                    </div>
+                    <div className="summary">
+                        <h3><a href="/questions/44686609/implementing-a-neural-network-in-haskell" className="question-hyperlink">Implementing a Neural Network in Haskell</a></h3>
+                        <div className="excerpt">
+                            I'm trying to implement a neural network architecture in Haskell, and use it on MNIST.
+                            I'm using the hmatrix package for the linear algebra.
+                            My training framework is built using the pipes package.
+                            ...
+        </div>
+                        <div className="tags t-algorithm t-haskell t-neural-network t-backpropagation pl-4">
+                            <a href="/questions/tagged/algorithm" className="post-tag" title="show questions tagged 'algorithm'" rel="tag">algorithm</a> <a href="/questions/tagged/haskell" className="post-tag" title="show questions tagged 'haskell'" rel="tag">haskell</a> <a href="/questions/tagged/neural-network" className="post-tag" title="show questions tagged 'neural-network'" rel="tag">neural-network</a> <a href="/questions/tagged/backpropagation" className="post-tag" title="show questions tagged 'backpropagation'" rel="tag">backpropagation</a>
+                        </div>
+                        <div className="started fr">
+                            <div className="user-info ">
+                                <div className="user-action-time">
+                                    asked <span title="2017-06-21 21:32:02Z" className="relativetime">Jun 21 '17 at 21:32</span>
+                                </div>
+                                <div className="user-gravatar32">
+                                    <a href="/users/4196726/charles-langlois"><div className="gravatar-wrapper-32"><img src="https://lh3.googleusercontent.com/-wQ86ZJ6sCsA/AAAAAAAAAAI/AAAAAAAAAI8/2dENRfi7v5c/photo.jpg?sz=32" alt width={32} height={32} className="bar-sm" /></div></a>
+                                </div>
+                                <div className="user-details">
+                                    <a href="/users/4196726/charles-langlois">Charles Langlois</a>
+                                    <div className="-flair">
+                                        <span className="reputation-score" title="reputation score " dir="ltr">3,382</span><span title="1 gold badge" aria-hidden="true"><span className="badge1" /><span className="badgecount">1</span></span><span className="v-visible-sr">1 gold badge</span><span title="10 silver badges" aria-hidden="true"><span className="badge2" /><span className="badgecount">10</span></span><span className="v-visible-sr">10 silver badges</span><span title="19 bronze badges" aria-hidden="true"><span className="badge3" /><span className="badgecount">19</span></span><span className="v-visible-sr">19 bronze badges</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="question-summary" id="question-summary-49162455">
+                    <div className="statscontainer">
+                        <div className="stats">
+                            <div className="vote">
+                                <div className="votes">
+                                    <span className="vote-count-post "><strong>166</strong></span>
+                                    <div className="viewcount">votes</div>
+                                </div>
+                            </div>
+                            <div className="status unanswered">
+                                <strong>0</strong>answers
+          </div>
+                        </div>
+                        <div className="views warm" title="3,810 views">
+                            4k views
+        </div>
+                    </div>
+                    <div className="summary">
+                        <h3><a href="/questions/49162455/how-to-use-classes-to-control-dreams" className="question-hyperlink">How to use classes to “control dreams”?</a></h3>
+                        <div className="excerpt">
+                            Background
+                            -
+                            I've been playing around with Deep Dream and Inceptionism, using the Caffe framework to visualize layers of GoogLeNet, an architecture built for the Imagenet project, a large visual ...
+        </div>
+                        <div className="tags t-deep-learning t-caffe t-conv-neural-network t-imagenet t-deep-dream">
+                            <a href="/questions/tagged/deep-learning" className="post-tag" title rel="tag">deep-learning</a> <a href="/questions/tagged/caffe" className="post-tag" title="show questions tagged 'caffe'" rel="tag">caffe</a> <a href="/questions/tagged/conv-neural-network" className="post-tag" title rel="tag">conv-neural-network</a> <a href="/questions/tagged/imagenet" className="post-tag" title rel="tag">imagenet</a> <a href="/questions/tagged/deep-dream" className="post-tag" title="show questions tagged 'deep-dream'" rel="tag">deep-dream</a>
+                        </div>
+                        <div className="started fr">
+                            <div className="user-info user-hover">
+                                <div className="user-action-time">
+                                    asked <span title="2018-03-07 22:44:01Z" className="relativetime">Mar 7 '18 at 22:44</span>
+                                </div>
+                                <div className="user-gravatar32">
+                                    <a href="/users/3451339/8-bit-borges"><div className="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/HPuzK.png?s=32&g=1" alt width={32} height={32} className="bar-sm" /></div></a>
+                                </div>
+                                <div className="user-details">
+                                    <a href="/users/3451339/8-bit-borges">8-Bit Borges</a>
+                                    <div className="-flair">
+                                        <span className="reputation-score" title="reputation score " dir="ltr">5,095</span><span title="12 gold badges" aria-hidden="true"><span className="badge1" /><span className="badgecount">12</span></span><span className="v-visible-sr">12 gold badges</span><span title="44 silver badges" aria-hidden="true"><span className="badge2" /><span className="badgecount">44</span></span><span className="v-visible-sr">44 silver badges</span><span title="95 bronze badges" aria-hidden="true"><span className="badge3" /><span className="badgecount">95</span></span><span className="v-visible-sr">95 bronze badges</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="s-pagination pager fl">
+                    <div className="s-pagination--item is-selected">1</div>
+                    <a className="s-pagination--item js-pagination-item" href="/questions?tab=unanswered&page=2" rel title="Go to page 2">2</a>
+                    <a className="s-pagination--item js-pagination-item" href="/questions?tab=unanswered&page=3" rel title="Go to page 3">3</a>
+                    <a className="s-pagination--item js-pagination-item" href="/questions?tab=unanswered&page=4" rel title="Go to page 4">4</a>
+                    <a className="s-pagination--item js-pagination-item" href="/questions?tab=unanswered&page=5" rel title="Go to page 5">5</a>
+                    <div className="s-pagination--item s-pagination--item__clear"> … </div>
+                    <a className="s-pagination--item js-pagination-item" href="/questions?tab=unanswered&page=2" rel="next" title="Go to page 2"> Next</a></div>
             </div>
         </div>
+
 
     )
 }

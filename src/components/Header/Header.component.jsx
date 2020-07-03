@@ -1,24 +1,36 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Header.styles.scss'
 import { Link } from 'react-router-dom'
 import { auth } from '../firebase/firebase.utils'
 
 const Header = ({currentUser}) => {
+    // const [stickHeader, setstickHeader] = useState(null)
+    // useEffect(() => {
+    //     window.addEventListener('scroll',()=>{
+    //         window.scrollY > 0 && setstickHeader(window.scrollY)
+    //     })
+    //     return () => {
+    //         window.removeEventListener('scroll',()=>setstickHeader(null))
+    //     }
+    // })
     return (
-        <header>
+        <header className={`${currentUser && 'has-user '}`}>
             <a href="#" className="logo">Moringa-QA</a>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Questions</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Team</a></li>
+                <li><Link to='/'>Home</Link></li>
+                <li><Link to="/question">Questions</Link></li>
+                {currentUser && <li><Link to="/postQuestion">Post A Question</Link></li>}
                 {
-                currentUser ===null?
-                <li><Link to="/login"> Sign In</Link></li>
-                :
+                currentUser?
                 <li ><a onClick={()=>auth.signOut()}> Sign Out</a></li>
-            }
+                :
+                <li><Link to="/login"> Sign In</Link></li>
+
+                }
+                {
+                    currentUser &&
+                <div><p>{currentUser.displayName}</p></div>
+                }
                 
             </ul>
         </header>

@@ -26,7 +26,11 @@ header {
         justify-content: center;
         align-items: center;        
         height: 50px;
+        p{
+            color: white;
+        }
         li {
+            cursor: pointer;
             height: 50px;
             line-height: 50px;
             vertical-align: bottom;
@@ -39,7 +43,7 @@ header {
             }
             position: relative;
             list-style: none;
-            a {
+            a,p {
                 position: relative;
                 margin: 0 15px;
                 text-decoration: none;
@@ -51,16 +55,24 @@ header {
         }
     }
 }
-
 header.sticky {
     padding: 5px 100px;
     background: #fff;
-    .logo {
-        color: #000;
-    }
-    li {
-        a {
-            color: #000;
-        }
-    }
+  }
+
+header.has-user {
+    // padding: 5px 100px;
+    background: #3f5018c9;
+    transition-timing-function: linear;
+    // background-color: yellow;
+    transition: 4s;
+    font-weight: 500;
+    // .logo {
+    //     color: #000;
+    // }
+    // li {
+    //     a {
+    //         color: #000;
+    //     }
+    // }
 }
