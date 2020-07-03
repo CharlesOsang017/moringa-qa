@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/moringa-qa/static/css/main.83923214.chunk.css",
-    "main.js": "/moringa-qa/static/js/main.bb88bd72.chunk.js",
-    "main.js.map": "/moringa-qa/static/js/main.bb88bd72.chunk.js.map",
+    "main.js": "/moringa-qa/static/js/main.f3f959fb.chunk.js",
+    "main.js.map": "/moringa-qa/static/js/main.f3f959fb.chunk.js.map",
     "runtime-main.js": "/moringa-qa/static/js/runtime-main.d3cac0a6.js",
     "runtime-main.js.map": "/moringa-qa/static/js/runtime-main.d3cac0a6.js.map",
     "static/css/2.3c515868.chunk.css": "/moringa-qa/static/css/2.3c515868.chunk.css",
     "static/js/2.af56103b.chunk.js": "/moringa-qa/static/js/2.af56103b.chunk.js",
     "static/js/2.af56103b.chunk.js.map": "/moringa-qa/static/js/2.af56103b.chunk.js.map",
     "index.html": "/moringa-qa/index.html",
-    "precache-manifest.67b80c3dc3a1dd3ded1b9134e461a14f.js": "/moringa-qa/precache-manifest.67b80c3dc3a1dd3ded1b9134e461a14f.js",
+    "precache-manifest.f5daf1b619b7f833a39e3763c20f0e8d.js": "/moringa-qa/precache-manifest.f5daf1b619b7f833a39e3763c20f0e8d.js",
     "service-worker.js": "/moringa-qa/service-worker.js",
     "static/css/2.3c515868.chunk.css.map": "/moringa-qa/static/css/2.3c515868.chunk.css.map",
     "static/css/main.83923214.chunk.css.map": "/moringa-qa/static/css/main.83923214.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.3c515868.chunk.css",
     "static/js/2.af56103b.chunk.js",
     "static/css/main.83923214.chunk.css",
-    "static/js/main.bb88bd72.chunk.js"
+    "static/js/main.f3f959fb.chunk.js"
   ]
 }

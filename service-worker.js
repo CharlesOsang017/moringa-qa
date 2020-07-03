@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/moringa-qa/precache-manifest.67b80c3dc3a1dd3ded1b9134e461a14f.js"
+  "/moringa-qa/precache-manifest.f5daf1b619b7f833a39e3763c20f0e8d.js"
 );
 
 self.addEventListener('message', (event) => {
